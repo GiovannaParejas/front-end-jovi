@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.celular {
+    width: 360px;
+    height: 640px;
+    background: #415FFF;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra Superior */
+
+.barra-superior {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-superior .material-icons {
+    font-size: 16px;
+}
+
+.barra-inferior button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Fim Barra Superior */
+
+/*Barra Inferior */
+
+.barra-inferior {
+    padding: 12px 80px;
+    color: white;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-inferior .material-icons {
+    font-size: 16px;
+}
+
+/* Fim Barra Inferior */
+
+
+
+
+

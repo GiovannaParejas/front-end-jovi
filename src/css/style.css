@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -51,6 +58,13 @@ body {
     font-size: 16px;
 }
 
+.barra-inferior button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
 /* Fim Barra Inferior */
 
 .home {
@@ -84,8 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    trasition: 0.2s;
+    transition: 0.2s;
 }
 
 .app:hover {
