@@ -9,20 +9,100 @@ body {
 }
 
 .celular {
-    width: 375px;
+    width: 360px;
     height: 640px;
-    background: #ffffff;
-    border-radius: 30px;
+    background: #415FFF;
+    border-radius: 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
+/* Barra Superior */
+
 .barra-superior {
-    padding: 15px 20px;
+    padding: 12px 20px;
+    font-size: 14px;
     color: white;
-    background: black;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.barra-superior .material-icons {
+    font-size: 16px;
+}
+
+/* Fim Barra Superior */
+
+/*Barra Inferior */
+
+.barra-inferior {
+    padding: 12px 80px;
+    color: white;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra-inferior .material-icons {
+    font-size: 16px;
+}
+
+/* Fim Barra Inferior */
+
+.home {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-titulo {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 80px
+}
+
+.app {
+    width: 70px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    trasition: 0.2s;
+}
+
+.app:hover {
+    transform: scale(1.1);
+}
+
+.app .material-icons {
+    font-size: 36px;
+    padding: 12px;
+    border-radius: 15px;
+    background: #ffffff
+}
+
+.app p {
+    font-size: 12px;
+    color: white;
+}
+
+
+
