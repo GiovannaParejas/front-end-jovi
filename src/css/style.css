@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.celular {
+    width: 375px;
+    height: 640px;
+    background: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-superior {
+    padding: 15px 20px;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
