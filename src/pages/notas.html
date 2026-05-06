@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/notas.css">
-    <title>Notas | Jovi Study Lens</title>
+    <title>Notas — Jovi</title>
 </head>
 <body>
-    
+    <div class="celular">
+        <header class="barra-superior">
+            <span>9:30</span>
+            <div>
+                <span class="material-icons">signal_cellular_alt</span>
+                <span class="material-icons">wifi</span>
+                <span class="material-icons">battery_full</span>
+            </div>
+        </header>
+
+        <div class="app-header">
+            <div class="app-header-top">
+                <h1 class="app-titulo">Notas</h1>
+                <button class="btn-nova-nota">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <span class="placeholder">Buscar notas...</span>
+            </div>
+        </div>
+
+        <div class="filtros">
+            <div class="filtro ativo">Todas</div>
+            <div class="filtro inativo">Estudo</div>
+            <div class="filtro inativo">Pessoal</div>
+            <div class="filtro inativo">Rascunho</div>
+        </div>
+
+        <div class="contador">3 notas</div>
+
+        <main class="notas-lista">
+            <a href="nota-editor.html" class="nota-card azul">
+                <div class="nota-titulo">Holiday at Sea</div>
+                <div class="nota-preview">My wife and I had never considered a cruise holiday because we have four children under fourteen...</div>
+                <div class="nota-meta">
+                    <span class="nota-data">Hoje, 09:12</span>
+                    <span class="nota-tag azul">Estudo</span>
+                </div>
+             </a>
+
+            <a href="nota-editor.html" class="nota-card verde">
+                <div class="nota-titulo">Férias no Mar (Tradução)</div>
+                <div class="nota-preview">Minha esposa e eu nunca tínhamos considerado fazer um cruzeiro, porque temos quatro filhos com menos de quatorze anos e achávamos...</div>
+                <div class="nota-meta">
+                    <span class="nota-data">Ontem, 21:45</span>
+                    <span class="nota-tag verde">Pessoal</span>
+                </div>
+              </a>
+
+            <a href="nota-editor.html" class="nota-card amarelo">
+                <div class="nota-titulo">Design Thinking - Process (Texto)</div>
+                <div class="nota-preview">Nano Course – Design como ferramenta de inovação...</div>
+                <div class="nota-meta">
+                    <span class="nota-data">03/05, 14:30</span>
+                    <span class="nota-tag amarelo">Rascunho</span>
+                </div>
+              </a>
+        </main>
+
+        <footer class="barra-inferior">
+            <button class="material-icons" onclick="history.back()">arrow_back</button>
+            <button class="material-icons" onclick="window.location.href='../../index.html'">radio_button_unchecked</button>
+            <button class="material-icons" onclick="alert('Abrir apps recentes')">menu</button>
+        </footer>
+    </div>
 </body>
 </html>
