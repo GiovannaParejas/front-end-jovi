@@ -70,8 +70,8 @@ function fecharMenuAnotacoes() {
 function abrirNota() {
     const foto = fotos[fotoAtual];
     const notaCompleta = notasCompletas[foto.nota];
-    localStorage.setItem('nota_titulo', notaCompleta.titulo);
-    localStorage.setItem('nota_corpo', notaCompleta.corpo);
+    sessionStorage.setItem('nota_titulo', notaCompleta.titulo);
+    sessionStorage.setItem('nota_corpo', notaCompleta.corpo);
     window.location.href = 'nota-editor.html';
 }
 
