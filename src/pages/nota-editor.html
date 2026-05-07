@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/nota-editor.css">
+    <link rel="icon" href="/src/assets/favicon.ico">
     <title>Nota — Jovi</title>
 </head>
+
 <body>
     <div class="celular">
         <header class="barra-superior">
@@ -32,23 +37,9 @@
         </div>
 
         <main class="editor-area">
-            <div
-                class="nota-titulo-edit"
-                contenteditable="true"
-                data-placeholder="Título"
-            >Resumo — Fotossíntese</div>
+            <div class="nota-titulo-edit" contenteditable="true" data-placeholder="Título"></div>
 
-            <div
-                class="nota-corpo"
-                contenteditable="true"
-                data-placeholder="Comece a escrever..."
-            >A fotossíntese é o processo pelo qual plantas, algas e algumas bactérias convertem luz solar em energia química, armazenada na forma de glicose.
-
-O processo ocorre nos cloroplastos, organelas presentes nas células vegetais. A clorofila, pigmento responsável pela cor verde das plantas, absorve a luz solar principalmente nos comprimentos de onda vermelho e azul.
-
-A equação geral da fotossíntese pode ser resumida como: 6CO₂ + 6H₂O + luz → C₆H₁₂O₆ + 6O₂.
-
-Existem duas etapas principais: as reações luminosas, que ocorrem nas membranas dos tilacoides, e o Ciclo de Calvin, que ocorre no estroma do cloroplasto.</div>
+            <div class="nota-corpo" contenteditable="true" data-placeholder="Comece a escrever..."></div>
         </main>
 
         <footer class="barra-ferramentas">
@@ -76,15 +67,13 @@ Existem duas etapas principais: as reações luminosas, que ocorrem nas membrana
 
         <div class="barra-inferior">
             <button class="material-icons" onclick="history.back()">arrow_back</button>
-            <button class="material-icons" onclick="window.location.href='../../index.html'">radio_button_unchecked</button>
+            <button class="material-icons"
+                onclick="window.location.href='../../index.html'">radio_button_unchecked</button>
             <button class="material-icons" onclick="alert('Abrir apps recentes')">menu</button>
         </div>
     </div>
 
-    <script>
-        function formatar(comando) {
-            document.execCommand(comando, false, null);
-        }
-    </script>
+    <script src="../js/nota-editor.js"></script>
 </body>
+
 </html>

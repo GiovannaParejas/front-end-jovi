@@ -1,12 +1,30 @@
+:root {
+    --background-pagina: #E8E8E8;
+    --cor-branco: #FFFFFF;
+    --background-celular: #0A0A0A;
+    --cor-azul: #415FFF;
+    --cor-azul-claro: #5570FF;
+    --background-cor-cinza: #1A1A1A;
+    --cor-cinza-borda: #1E1E1E;
+    --cor-cinza-escuro: #111;
+    --cor-texto-branco: #FFF;
+    --cor-texto-claro: #BBB;
+    --cor-texto-medio: #AAA;
+    --cor-texto-fraco: #555;
+    --cor-texto-muted: #666;
+    --cor-texto-placeholder: #333;
+    --cor-barra-superior: #888;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    background: #e8e8e8;
+    background: var(--background-pagina);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,32 +34,29 @@ body {
 .celular {
     width: 360px;
     height: 640px;
-    background: #0a0a0a;
+    background: var(--background-celular);
     border-radius: 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
 
-/* Barra Superior */
 .barra-superior {
     padding: 12px 20px;
     font-size: 12px;
-    color: #888;
+    color: var(--cor-branco);
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Space Mono', monospace;
     flex-shrink: 0;
 }
 
 .barra-superior .material-icons {
     font-size: 16px;
-    color: #666;
+    color: var(--cor-branco);
 }
 
-/* Header do App */
 .app-header {
     display: flex;
     align-items: center;
@@ -55,7 +70,7 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #666;
+    color: var(--cor-texto-muted);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,19 +82,19 @@ body {
 
 .btn-voltar:hover,
 .btn-opcoes:hover {
-    background: #1a1a1a;
-    color: #aaa;
+    background: var(--background-cor-cinza);
+    color: var(--cor-texto-claro);
 }
 
 .btn-voltar .material-icons,
 .btn-opcoes .material-icons {
     font-size: 20px;
+    color: var(--cor-branco);
 }
 
 .header-titulo {
-    font-family: 'Space Mono', monospace;
     font-size: 12px;
-    color: #555;
+    color: var(--cor-branco);
     text-align: center;
     flex: 1;
     white-space: nowrap;
@@ -88,7 +103,6 @@ body {
     padding: 0 8px;
 }
 
-/* Área de edição */
 .editor-area {
     flex: 1;
     overflow-y: auto;
@@ -104,10 +118,9 @@ body {
 }
 
 .nota-titulo-edit {
-    font-family: 'Space Mono', monospace;
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: var(--cor-texto-branco);
     outline: none;
     border: none;
     background: transparent;
@@ -116,33 +129,35 @@ body {
 
 .nota-titulo-edit:empty::before {
     content: attr(data-placeholder);
-    color: #333;
+    color: var(--cor-texto-placeholder);
 }
 
 .nota-corpo {
     font-size: 13px;
-    color: #aaa;
+    color: var(--cor-texto-medio);
     line-height: 1.75;
     outline: none;
     border: none;
     background: transparent;
-    white-space: pre-wrap;
     min-height: 100px;
+}
+
+.nota-corpo p {
+    margin-bottom: 1em;
 }
 
 .nota-corpo:empty::before {
     content: attr(data-placeholder);
-    color: #333;
+    color: var(--cor-texto-placeholder);
 }
 
-/* Barra de ferramentas */
 .barra-ferramentas {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 8px;
-    background: #111;
-    border-top: 1px solid #1e1e1e;
+    background: var(--cor-cinza-escuro);
+    border-top: 1px solid var(--cor-cinza-borda);
     flex-shrink: 0;
 }
 
@@ -160,12 +175,12 @@ body {
 }
 
 .ferramenta:hover {
-    background: #1e1e1e;
+    background: var(--cor-cinza-borda);
 }
 
 .ferramenta-icone {
     font-size: 18px;
-    color: #bbb;
+    color: var(--cor-texto-claro);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,30 +189,26 @@ body {
 
 .ferramenta-icone.negrito {
     font-weight: 700;
-    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
-    color: #bbb;
+    color: var(--cor-texto-claro);
 }
 
 .ferramenta-icone.sublinhado {
     text-decoration: underline;
-    font-family: 'DM Sans', sans-serif;
     font-size: 16px;
-    color: #bbb;
+    color: var(--cor-texto-claro);
 }
 
 .ferramenta-label {
     font-size: 9px;
-    color: #444;
+    color: var(--cor-texto-fraco);
     text-align: center;
     line-height: 1.2;
     max-width: 44px;
 }
 
-/* Barra Inferior */
 .barra-inferior {
     padding: 10px 80px;
-    color: #666;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -209,7 +220,7 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #666;
+    color: var(--cor-texto-muted);
     font-family: 'Material Icons';
     font-size: 20px;
 }
