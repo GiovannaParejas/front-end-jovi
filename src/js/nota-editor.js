@@ -1,6 +1,10 @@
 const params = new URLSearchParams(window.location.search);
-const titulo = params.get('titulo');
-const corpo = params.get('corpo');
+
+const titulo = localStorage.getItem('nota_titulo') || params.get('titulo');
+const corpo = localStorage.getItem('nota_corpo') || params.get('corpo');
+
+localStorage.removeItem('nota_titulo');
+localStorage.removeItem('nota_corpo');
 
 if (titulo) {
     document.querySelector('.nota-titulo-edit').textContent = titulo;
