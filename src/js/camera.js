@@ -223,10 +223,10 @@ function copiarTexto(tipo) {
 
 function irParaFoto() {
     if (modoAtual === 'digitalizar') {
-        window.location.href = '../pages/galeria.html?foto=0';
+        window.location.href = '/front-end-jovi/src/pages/galeria.html?foto=0';
     } else if (modoAtual === 'traduzir') {
-        window.location.href = '../pages/galeria.html?foto=1';
+        window.location.href = '/front-end-jovi/src/pages/galeria.html?foto=1';
     } else {
-        window.location.href = '../pages/galeria.html';
+        window.location.href = '/front-end-jovi/src/pages/galeria.html';
     }
 }

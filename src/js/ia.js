@@ -3,7 +3,7 @@ const foto = params.get('foto');
 
 const resumos = {
     '0': {
-        titulo: 'Design Thinking – Process (Resumo)',
+        titulo: 'Design Thinking - Process (Resumo)',
         corpo: `Design Thinking é uma abordagem de inovação centrada no usuário, que utiliza pesquisa para entender profundamente suas necessidades, dores e comportamentos, com o objetivo de criar soluções mais relevantes.
 
 Inovação é um processo criativo que gera impacto positivo, podendo ser incremental (melhorias contínuas) ou disruptiva (mudanças que transformam mercados e comportamentos).
